@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Manropr',sans-serif;
+}
+
+
+#wakeUpTimeSelector{
+    width: 100px;
+    height: 20px;
+    border-radius: 3px;
+}
+#setLunchTime{
+    width: 110px;
+    height: 23px;
+    border-radius: 3px;
+}
+#setNapTime{
+    width: 110px;
+    height: 23px;
+    border-radius: 3px;
+}
+.main-container{
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    position: relative;
+
+}
+
+#grid-container1{
+
+    width: 45%;
+    height: 75vh;
+    display:grid;
+    grid-row-gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20% 50% 10% 20%;
+    
+}
+
+
+#clock-img {
+
+    background-image: url("C:/Users/manik/Downloads/clock_logo/clock_logo@2x.png");
+    background-size: 100% 100%;
+    display: inline;
+}
+
+
+
+.grid-container2{
+    width: 45%;
+    height: 70vh;
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 20% 95%;
+}
+/* 
+
+.grid-item1{
+    width: 500px;
+    height: 100px;
+    font-size: 35px;
+} */
+
+.grid-container1{
+    width: 500px;
+    height: 100px;
+    font-size: 35px;
+}
+
+
+#left-second-container{ 
+    
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    position: relative;
+    border-radius: 10px;
+}
+/*#text{
+    width: 200%;
+    height: 150%;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #8E53F0;
+    text-align: center;
+    background-color: white;
+    background-size:100% 100%;
+    background-position:center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}*/
+
+.left-second-container-inner{
+    padding: 20px;
+    width: 100%;
+    height: 33%;
+    position: relative;
+}
+
+.left-second-container-option{
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    padding: 0px;
+    position: absolute;
+    text-align: center;
+   
+}
+
+
+#set-time{
+    top: 634px;
+    left: 218px;
+    width: 175px;
+    height: 51px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-image:linear-gradient(113deg, #6E54EC, #6E54EC, #CB52FB, #FC5EFF, #F1A7C5);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-38) var(--unnamed-font-family-manrope);
+    color: #EDEDED;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    
+}
+
+#set-time:hover{
+    background-image: linear-gradient(-113deg, #6E54EC, #6E54EC, #CB52FB, #FC5EFF, #F1A7C5);
+}
+
+
+#digital-clock{
+    
+    position: relative;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+#right-bottom-container{
+    position: relative;
+    border: 5px solid red;
+}
+
+#text-container{
+    border-radius: 2px;
+    position: relative;
+    top:20px;
+    background-color: white;
+    padding-left: 3%;
+    padding-top: 3%;
+    margin: 0px;
+    width: 500px;
+    height: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #8E53F0;
+    text-align: left;
+}
+
+
+
+#img-container{
+    
+    position: absolute;
+    top: 240px;
+    width: 500px;
+    height: 341px;
+    background-color: white;
+    background-image: url("C:/Users/manik/Downloads/Component%2030%20%E2%80%93%201/Component%2030%20%E2%80%93%201.png");
+    background-size:100% 100%;
+    background-position:center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.grid-message{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    
+    margin-left: 5px;
+    display: grid;
+    background-color: violet;
+    color: white;
+}
+
+
+#dynamic-block{
+    width: 350px;
+    height: 120px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    display: grid;
+    background-color: violet;
+    color: white;
+}
+#div1{
+    background-image: url("C:/Users/manik/Downloads/wake_up/wake_up.png");
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+   
+}
+
+#div2{
+    background-image: url("C:/Users/manik/Downloads/lunch_time/lunch_time.png");
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+   
+}
+
+#div3{
+    background-image: url("C:/Users/manik/Downloads/nap_time/nap_time.png");
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+   
+}
+
+
+#lb1{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    margin: auto;
+    opacity: 0.71;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: white;
+
+
+}
+
+
+#lb2{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    margin: auto;
+    opacity: 0.22;
+    z-index: -2;
+    border-radius: 10px;
+    background-color: white; 
+}
+
+#clock1{
+    width: 46px;
+    height: 26px;
+    float: left;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+#clock2{
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 20px;
+    color: violet;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 25px;
+    background-color: #F6E2FF;
+
+}
+#clock3{
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 20px;
+    color: violet;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 25px;
+    background-color: #F6E2FF;
+
+}
+#clock4{
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 20px;
+    color: violet;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 25px;
+    background-color: #F6E2FF;
+
+}
+#clock5{
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 25px;
+    background-color: #CB52F8;
+
+}
+
+
+
+#dots{
+    color:violet;
+
+}
